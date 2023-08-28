@@ -8,13 +8,22 @@ public class Usuario {
     private  String UserName;
     private  String Senha;
 
-    public Usuario(String nome, String userName, String senha) {
+    public Usuario(int id, String nome, String userName, String senha) {
+        Id = id;
         Nome = nome;
         UserName = userName;
         Senha = senha;
     }
 
     public Usuario() {
+    }
+
+    public int getId() {
+        return Id;
+    }
+
+    public void setId(int id) {
+        Id = id;
     }
 
     public String getNome() {
