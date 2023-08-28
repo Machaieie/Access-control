@@ -63,7 +63,7 @@ For questions or issues, please contact our support team at machaieieedwin1@gmai
 Developed by  `Edwin Machaieie` 
 
 ### LinkedIn Profile
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-YourName-blue?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/edwin-machaieie-ab5156279/)
+[![LinkedIn](https://img.shields.io/badge/edwin-machaieie-ab5156279-blue?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/edwin-machaieie-ab5156279/)
 
 
 
