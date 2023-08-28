@@ -59,3 +59,11 @@ This is an access control and product sales application developed in Java. It al
 For questions or issues, please contact our support team at machaieieedwin1@gmail.com.
 
 **Notice:** This is a fictional project created for demonstration and learning purposes only. Any resemblance to real systems is purely coincidental.
+
+Developed by  `Edwin Machaieie` 
+
+### LinkedIn Profile
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-YourName-blue?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/edwin-machaieie-ab5156279/)
+
+
+
