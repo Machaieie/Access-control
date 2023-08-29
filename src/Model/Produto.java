@@ -1,14 +1,14 @@
 package Model;
 
 public class Produto {
-    private int id;
+    private int Codigo;
     private String nome;
     private double preco;
     private int quantidade;
     private String descricao;
 
-    public Produto(int id, String nome, double preco, int quantidade, String descricao) {
-        this.id = id;
+    public Produto(int codigo, String nome, double preco, int quantidade, String descricao) {
+        this.Codigo = codigo;
         this.nome = nome;
         this.preco = preco;
         this.quantidade = quantidade;
@@ -20,11 +20,11 @@ public class Produto {
     }
 
     public int getId() {
-        return id;
+        return Codigo;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setId(int codigo) {
+        this.Codigo = codigo;
     }
 
     public String getNome() {
