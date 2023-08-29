@@ -1,47 +1,47 @@
 package Model;
 
-public class Estoque {
+import java.util.Date;
 
-    private int id;
-    private Produto produto;
+public class Estoque {
+    private String codigo;
+    private String codigoProduto;
     private int quantidade;
     private double preco;
+    private Date data;
 
-    private Produto IdProduto;
-
-    public Estoque(int id, Produto produto, int quantidade, double preco, Produto idProduto) {
-        this.id = id;
-        this.produto = produto;
+    public Estoque(String codigo, String codigoProduto, int quantidade, double preco, Date data) {
+        this.codigo = codigo;
+        this.codigoProduto = codigoProduto;
         this.quantidade = quantidade;
         this.preco = preco;
-        IdProduto = idProduto;
+        this.data = data;
     }
 
     public Estoque() {
     }
 
-    public int getId() {
-        return id;
+    public void setCodigo(String codigo) {
+        this.codigo = codigo;
     }
 
-    public Produto getIdProduto() {
-        return IdProduto;
+    public String getCodigoProduto() {
+        return codigoProduto;
     }
 
-    public void setIdProduto(Produto idProduto) {
-        IdProduto = idProduto;
+    public void setCodigoProduto(String codigoProduto) {
+        this.codigoProduto = codigoProduto;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public Date getData() {
+        return data;
     }
 
-    public Produto getProduto() {
-        return produto;
+    public void setData(Date data) {
+        this.data = data;
     }
 
-    public void setProduto(Produto produto) {
-        this.produto = produto;
+    public String getCodigo() {
+        return codigo;
     }
 
     public int getQuantidade() {
@@ -60,10 +60,4 @@ public class Estoque {
         this.preco = preco;
     }
 
-    @Override
-    public String toString() {
-        return "<------ Produto: "+produto.getNome()+" ---------->"+"\n" +
-                "Quantidade: "+quantidade+"\n" +
-                "Preco: "+preco;
-    }
 }

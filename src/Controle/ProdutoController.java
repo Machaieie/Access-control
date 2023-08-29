@@ -35,12 +35,12 @@ public class ProdutoController {
             Statement statement = connection.createStatement();
             ResultSet resultSet = statement.executeQuery(sql);
             while (resultSet.next()) {
-                int id = resultSet.getInt("Id");
+                String codigo = resultSet.getString("Codigo");
                 String nome = resultSet.getString("Nome");
                 double preco = resultSet.getDouble("Preco");
                 int quantidade = resultSet.getInt("Quantidade");
                 String descricao = resultSet.getString("Descricao");
-                Produto produto = new Produto(id, nome, preco,quantidade,descricao);
+                Produto produto = new Produto(codigo, nome, preco,quantidade,descricao);
                 produtos.add(produto);
             }
         } catch (SQLException e) {
@@ -51,7 +51,7 @@ public class ProdutoController {
         return produtos;
     }
 
-    public static void atualizarProduto(Produto produto) {
+    public static void atualizarProduto(Produto produto, String codigo) {
         Connection connection = DataBase.getConnection();
         try {
             String sql = "UPDATE Produtos SET Nome = ?, Preco = ?, Quantidade = ?, Descricao = ? WHERE Id = ?";
@@ -69,12 +69,12 @@ public class ProdutoController {
         }
     }
 
-    public static void deletarProduto(int id) {
+    public static void deletarProduto(String codigo) {
         Connection connection = DataBase.getConnection();
         try {
             String sql = "DELETE FROM Produtos WHERE Id = ?";
             PreparedStatement statement = connection.prepareStatement(sql);
-            statement.setInt(1, id);
+            statement.setString(1, codigo);
             statement.executeUpdate();
             System.out.println("Produto deletado com sucesso!");
         } catch (SQLException e) {
